@@ -9,21 +9,41 @@ body {
 
 /* Custom styles for cards, buttons, etc. */
 .card {
-  @apply bg-white rounded-3xl shadow-custom p-6;
+  @apply bg-[#FFFFFF] rounded-[2rem] shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1),0_8px_10px_-6px_rgba(0,0,0,0.1)];
+  padding: 1.5rem;
 }
 
 .btn {
-  @apply px-6 py-3 rounded-full transition-colors duration-300 font-medium;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 300ms;
+  font-weight: 500;
 }
 
 .btn-primary {
-  @apply bg-[#00B8A9] text-white hover:bg-opacity-90;
+  background-color: #00B8A9;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
 }
 
 .btn-secondary {
-  @apply bg-[#F6416C] text-white hover:bg-opacity-90;
+  background-color: #F6416C;
+  color: #FFFFFF;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
 }
 
 .btn-accent {
-  @apply bg-[#FFDE7D] text-foreground hover:bg-opacity-90;
+  background-color: #FFDE7D;
+  color: #333333;
+}
+
+.btn-accent:hover {
+  opacity: 0.9;
 }
